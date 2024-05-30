@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulário elaborado</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form id="formulario" action="#" method="post">
+            <fieldset class="form-section">
+                <legend>Dados pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required />
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required />
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Dados profissionais</legend>
+                <div class="form-group-horizontal">
+                    <label>Natureza do Cargo:</label>
+                    <div class="form-inline-group">
+                        <input type="radio" id="gerencia" name="natureza_cargo" value="gerencia" checked />
+                        <label for="gerencia">Gerência</label>
+                        <input type="radio" id="financeiro" name="natureza_cargo" value="financeiro" />
+                        <label for="financeiro">Financeiro</label>
+                        <input type="radio" id="recepcao" name="natureza_cargo" value="recepcao" />
+                        <label for="recepcao">Recepção</label>
+                        <input type="radio" id="administrativo" name="natureza_cargo" value="administrativo" />
+                        <label for="administrativo">Administrativo</label>
+                        <input type="radio" id="juridico" name="natureza_cargo" value="juridico" />
+                        <label for="juridico">Jurídico</label>
+                    </div>
+                </div>
+                <div class="form-group-horizontal">
+                    <label>Área de interesse:</label>
+                    <div class="form-inline-group">
+                        <input type="checkbox" id="computacao" name="area_interesse" value="computacao" />
+                        <label for="computacao">Computação</label>
+                        <input type="checkbox" id="biologia" name="area_interesse" value="biologia" />
+                        <label for="biologia">Biologia</label>
+                        <input type="checkbox" id="meio_ambiente" name="area_interesse" value="meio_ambiente" />
+                        <label for="meio_ambiente">Meio Ambiente</label>
+                        <input type="checkbox" id="engenharia" name="area_interesse" value="engenharia" />
+                        <label for="engenharia">Engenharia</label>
+                        <input type="checkbox" id="historia" name="area_interesse" value="historia" />
+                        <label for="historia">História</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mini_curriculo">Mini-currículo:</label>
+                    <textarea id="mini_curriculo" name="mini_curriculo" rows="5"
+                        placeholder="Descreva brevemente seu currículo"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-buttons">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
